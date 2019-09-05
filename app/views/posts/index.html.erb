@@ -5,7 +5,10 @@
 <script type="text/javascript" charset="utf-8">
   $(function () {
     $(".js-more").on('click', function() {
-      let id = $(this).data("id")
+      let id = $(this).data("id");
+      $.get("/posts/" + id + "/body", function(data) {
+        alert(data)
+      })
     })
   })
 </script>
