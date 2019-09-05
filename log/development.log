@@ -1564,3 +1564,37 @@ Cannot render console from 138.197.202.197! Allowed networks: 127.0.0.1, ::1, 12
 Processing by Rails::WelcomeController#index as */*
   Rendered /usr/local/rvm/gems/ruby-2.6.1/gems/railties-4.2.10/lib/rails/templates/rails/welcome/index.html.erb (0.7ms)
 Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 5.32.97.110 at 2019-09-05 07:14:23 +0000
+Cannot render console from 5.32.97.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/_post.html.erb (0.5ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 396ms (Views: 387.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts" for 159.203.42.143 at 2019-09-05 07:14:23 +0000
+Cannot render console from 159.203.42.143! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#index as */*
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/_post.html.erb (1.2ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/_post.html.erb (0.1ms)
+  Rendered posts/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 5.32.97.110 at 2019-09-05 07:14:24 +0000
+Cannot render console from 5.32.97.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 5.32.97.110 at 2019-09-05 07:14:24 +0000
+Cannot render console from 5.32.97.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 5.32.97.110 at 2019-09-05 07:14:24 +0000
+Cannot render console from 5.32.97.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
