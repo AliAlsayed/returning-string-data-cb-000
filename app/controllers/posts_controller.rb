@@ -8,6 +8,9 @@ class PostsController < ApplicationController
   def show
   end
 
+  def body
+  end
+
   def new
     @post = Post.new
   end
